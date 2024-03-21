@@ -1,27 +1,30 @@
 # DynamicDialog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
+Hola amigos, como están, espero me puedan guiar en este caso.
 
-## Development server
+## Reproducción del problema
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+He creado dos componentes padres, uno donde uso dialog y otro donde uso dynamic dialog.
+En el html principal pueden comentar y descomentar los componentes para reproducir el error.
 
-## Code scaffolding
+## Que sucede?
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Estaba estudiando el uso del control container, acorde a lo que entiendo cuando uso el dialog normal, no hay problemas porque dicho componente lo ubico dentro del form.
+En cambio cuando uso dynamic dialog no funciona porque tengo entendido que se renderiza de forma dinamica fuera del app-root.
 
-## Build
+## Necesidad?
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Estoy trabajando con formularios anidados y necesito gestionar forms groups hijos que forman parte de un form group principal.
+Estos form group hijos se cargan con informacion que debe ser ingresada con antelacion, si hago esto con el dialog me saltan errores, puesto que el dialos se carga desde un inicio.
+En cambio con un dynamic dialog no tendria problema porque se carga dinamicamente restringido a que primero de llene la información principal.
 
-## Running unit tests
+## Dynamic Dialog y Control Container?
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Es posible es uso de dynamic dialog y control container?
+Es correcto tratar de hacerlo de esa forma?
+Hay alguna alternativa?
 
-## Running end-to-end tests
+## Gracias
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+De antemano agradezco su ayuda amigos.
+(Disculparán si ha codigo espaguetti, solo es un ejemplito xD)
